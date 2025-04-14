@@ -1,0 +1,35 @@
+.tilelist{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tile{
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #979797;
+    position: relative;
+
+    > h3{
+        margin-top: 0;
+        color: #03A8D8;
+    }
+
+    > p:last-child{
+        margin-bottom: 0;
+    }
+
+    .close-btn{
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        color: darkred;
+        line-height: 1;
+        cursor: pointer;
+        transition: color 200ms linear;
+
+        &:hover{
+            color: red;
+        }
+    }
+}
